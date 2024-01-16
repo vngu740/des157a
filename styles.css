@@ -126,7 +126,7 @@ main {
   color: #eedd0c;
 }
 
-.r {
+/* .r {
   grid-area: r;
   offset-path: path("M50,50 C50,200 100,200 350,195");
   animation: move 2000ms infinite alternate ease-in-out;
@@ -143,7 +143,30 @@ main {
   100% {
     offset-distance: 100%;
   }
-}
+} */
+
+.r {
+    grid-area: r;
+    margin: 180px 0 15px 15px;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    animation: rotate1 1000ms infinite ease-in-out;
+  }
+  
+  .r:after {
+    display: block;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
 .m {
   grid-area: m;
