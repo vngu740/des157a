@@ -54,12 +54,6 @@ main {
   color: #e9bd28;
 }
 
-.banner h1:hover,
-.banner h2:hover {
-  background-color: #bdfd41;
-  color: #090401;
-}
-
 .left {
   grid-area: a;
   background-color: #7580fc;

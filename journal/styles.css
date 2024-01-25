@@ -1,0 +1,83 @@
+h1,
+h2,
+time,
+footer a,
+p,
+li a,
+figcaption {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+header {
+  background-color: #bdfd41;
+  padding: 5px 0px;
+}
+
+.banner {
+  width: 1200px;
+  height: 250px;
+  margin: auto;
+  background-color: #be00fe;
+  color: #f5f5f5;
+  padding: 10px;
+  border: #090401 2px solid;
+}
+
+.banner h2 {
+  font-size: 82px;
+  margin: 40px 0;
+  letter-spacing: 3px;
+}
+
+.banner h1:hover {
+  background-color: #3b05ff;
+  color: #f5f5f5;
+}
+
+.banner a {
+  text-decoration: none;
+  display: block;
+}
+
+.banner a:visited {
+  color: #f5f5f5;
+}
+
+.journal1 {
+  background-color: #3b05ff;
+}
+
+article {
+  max-width: 1200px;
+  background-color: #f5f5f5;
+  padding: 20px 10px;
+  margin: auto;
+  border: #090401 2px solid;
+}
+
+article time {
+  font-size: 18px;
+}
+
+article h2 {
+  font-size: 36px;
+}
+
+article p {
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "PT Sans";
+}
+article h2,
+article p {
+  width: 500px;
+}
+
+article figure {
+  margin: 0;
+}
+
+article figcaption {
+    margin: 10px 0px;
+}
