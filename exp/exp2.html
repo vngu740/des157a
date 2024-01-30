@@ -22,8 +22,10 @@
       function randomColor() {
         var random = Math.floor(Math.random() * colors.length);
 
-        return random, colors[random];
+        return colors[random];
       }
+
+      randomcolor = randomColor();
 
       function guessColor() {
         if (askColor == randomColor) {
@@ -33,7 +35,8 @@
         }
       }
 
-      console.log(guessColor());
+      console.log("Random Color :" + randomcolor);
+      console.log("Guess Color :" + askColor);
     </script>
   </body>
 </html>
