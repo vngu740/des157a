@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 2</title>
+  </head>
+  <body>
+    <h1>Experiment 2</h1>
+
+    <h2>Change my Background Color!</h2>
+
+    <script>
+      /* Prompt the user for a color that the computer is "thinking of" - either red, yellow, green, or blue. Then pick a random color from an array. If the color entered by the user matches the color picked by the program, it displays the output message "You are right!". Otherwise, it displays "Try again!". (Credit: Krithika Govind) */
+
+      var askColor = prompt(
+        "What color am I thinking of? Red, yellow, green, or blue? Guess!"
+      ).toLowerCase();
+
+      var colors = ["red", "yellow", "green", "blue"];
+
+      function randomColor() {
+        var random = Math.floor(Math.random() * colors.length);
+
+        return random, colors[random];
+      }
+
+      function guessColor() {
+        if (askColor == randomColor) {
+          return "You are right!";
+        } else {
+          return "Try again!";
+        }
+      }
+
+      console.log(guessColor());
+    </script>
+  </body>
+</html>
