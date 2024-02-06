@@ -1,0 +1,95 @@
+body {
+  background-image: url(images/willyboy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.chocolate {
+  background-color: #d8d9da;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translate(0%, 5%);
+  border: 15px solid #91121b;
+  border-radius: 5px;
+  padding: 10px 10px 25px 10px;
+  font-family: helvetica;
+}
+
+.chocolate h1 {
+  margin: 0;
+  border-bottom: 5px solid black;
+  font-size: 2em;
+}
+
+.chocolate label {
+  font-weight: bold;
+}
+
+.chocolate .flex {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 10px solid black;
+}
+
+.flex p:last-of-type {
+  margin-left: auto;
+}
+
+.chocolate p {
+  margin: 3px 0;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.formgroup label {
+  padding: 0.75em 0.5em 0.5em 0;
+  margin-right: 1em;
+  flex: 1;
+}
+
+.cals {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #d6d9dc;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #d6d9dc;
+  outline: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ticket {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hidden {
+  visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+  visibility: visible;
+  opacity: 100%;
+}
+
+#madlib {
+  position: absolute;
+  width: 500px;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%);
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MadLib</title>
 
     <link
@@ -12,20 +12,84 @@
 
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header></header>
 
-    <header>
+    <main>
+      <div class="chocolate showing">
+        <h1>Nutrition Facts</h1>
+        <p>0 servings per container</p>
+        <div class="flex">
+          <p>Serving Size</p>
+          <p>10,000 squares</p>
+        </div>
+        <p>Amount per serving</p>
+        <div class="flex cals">
+          <p>Calories</p>
+          <p>230</p>
+        </div>
+
         <form>
-            <input type=”text”>
-            <input type=”text”>
-            <input type=”text”>
-            <input type=”text”>
-            <input type=”text”>
-        </form>
-    </header>
+          <div class="formgroup">
+            <label for="name1">Person's name</label>
+            <input type="text" id="name1" required />
+          </div>
 
-    <main></main>
-    
-</body>
+          <div class="formgroup">
+            <label for="adj1">Adjective</label>
+            <input type="text" id="adj1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="name2">Silly name</label>
+            <input type="text" id="name2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="place1">Place</label>
+            <input type="text" id="place1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="time1">Time</label>
+            <input type="text" id="time1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="time2">Time of day</label>
+            <input type="text" id="time2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="month1">Month</label>
+            <input type="text" id="month1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="adj2">Adjective</label>
+            <input type="text" id="adj2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="num1">Number</label>
+            <input type="text" id="num1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="adj3">Adjective</label>
+            <input type="text" id="adj3" />
+          </div>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+
+      <div id="overlay" class="hidden">
+        <img src="images/goldenticket.png" alt="goldenticket" class="ticket" />
+        <article id="madlib"></article>
+      </div>
+
+    </main>
+  </body>
 </html>
