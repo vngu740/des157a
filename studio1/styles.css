@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 .chocolate {
@@ -78,7 +79,7 @@ input[type="text"]:focus {
 
 .hidden {
   visibility: hidden;
-    opacity: 0;
+  opacity: 0;
 }
 
 .showing {
