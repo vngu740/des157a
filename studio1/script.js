@@ -6,6 +6,8 @@
     const myForm = document.querySelector('form');
     const madlibArticle = document.querySelector('#madlib');
 
+    document.body.style.backgroundImage = "url('images/willyboy.png')";
+
     myForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -22,65 +24,68 @@
 
         let myText;
 
-        if(name1 == ''){
+        if (name1 == '') {
             myText = "Please provide a person's name"
             document.querySelector('#name1').focus();
         }
-        
-        else if(adj1 == ''){
+
+        else if (adj1 == '') {
             myText = "Please provide an adjective"
             document.querySelector('#adj1').focus();
         }
 
-        else if(name2 == ''){
+        else if (name2 == '') {
             myText = "Please provide a silly name"
             document.querySelector('#name2').focus();
         }
 
-        else if(place1 == ''){
+        else if (place1 == '') {
             myText = "Please provide a place"
             document.querySelector('#place1').focus();
         }
 
-        else if(time1 == ''){
+        else if (time1 == '') {
             myText = "Please provide a time"
             document.querySelector('#time1').focus();
         }
 
-        else if(time2 == ''){
+        else if (time2 == '') {
             myText = "Please provide a time of day"
             document.querySelector('#time2').focus();
         }
 
-        else if(month1 == ''){
+        else if (month1 == '') {
             myText = "Please provide a month"
             document.querySelector('#month1').focus();
         }
-        
-        else if(adj2 == ''){
+
+        else if (adj2 == '') {
             myText = "Please provide an adjective"
             document.querySelector('#adj2').focus();
         }
 
-        else if(num1 == ''){
+        else if (num1 == '') {
             myText = "Please provide a number"
             document.querySelector('#num1').focus();
         }
 
-        else if(adj3 == ''){
+        else if (adj3 == '') {
             myText = "Please provide an adjective"
             document.querySelector('#adj3').focus();
         }
 
         else {
-            myText = `Wonka's Golden Ticket. Greetings to you, ${name1}, the finder of this ${adj1} ticket from Mr. ${name2}! Present this ticket at the ${place1} gates at ${time1} in the ${time2} of the first day of ${month1} and do not be ${adj2}. You may bring with you ${num1} of your own family... and only ${num1}... no one else... In your dreams you could not imagine ${adj3} SURPRISES that await you!`;
+            myText = `Greetings to you, ${name1}, the finder of this ${adj1} ticket from Mr. ${name2}! Present this ticket at the ${place1} gates at ${time1} in the ${time2} of the first day of ${month1} and do not be ${adj2}. You may bring with you ${num1} of your own family... and only ${num1}... no one else... In your dreams you could not imagine ${adj3} SURPRISES that await you!`;
         }
-    
+
         madlibArticle.innerHTML = myText;
 
         document.querySelector('#overlay').className = "showing";
         document.querySelector('.chocolate').className = "hidden";
+
+        document.body.style.backgroundImage = "url('images/crazywilly.png')";
     })
 
 })();
+
 

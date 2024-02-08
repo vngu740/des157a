@@ -10,6 +10,20 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -18,19 +32,15 @@
 
     <main>
       <div class="chocolate showing">
-        <h1>Nutrition Facts</h1>
-        <p>0 servings per container</p>
-        <div class="flex">
-          <p>Serving Size</p>
-          <p>10,000 squares</p>
-        </div>
-        <p>Amount per serving</p>
-        <div class="flex cals">
-          <p>Calories</p>
-          <p>230</p>
-        </div>
+        <h1><a href="../index.html">HOME</a></h1>
+        <div class="willytext">
+        <h2>Win a chance to tour my factory!</h2>
+        <p>*not creepy</p>
+      </div>
+        <img src="images/chocobar.png" alt="chocolate bar" class="bar" />
 
         <form>
+          <h3>Nutrition Facts</h3>
           <div class="formgroup">
             <label for="name1">Person's name</label>
             <input type="text" id="name1" required />
@@ -81,15 +91,18 @@
             <input type="text" id="adj3" />
           </div>
 
-          <input type="submit" value="Send" />
+          <input type="submit" value="Reveal the Golden Ticket" />
         </form>
       </div>
 
       <div id="overlay" class="hidden">
         <img src="images/goldenticket.png" alt="goldenticket" class="ticket" />
+        <h1><a href="../index.html">HOME</a></h1>
+        <h2>Wonka's</h2>
+        <h3>GOLDEN TICKET</h3>
         <article id="madlib"></article>
+        <p class="close"><a href="index.html">Eat another Wonka Bar</a></p>
       </div>
-
     </main>
   </body>
 </html>

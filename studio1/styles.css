@@ -1,24 +1,52 @@
 body {
-  background-image: url(images/willyboy.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
   position: relative;
   overflow: hidden;
+  max-height: 750px;
 }
 
-.chocolate {
-  background-color: #d8d9da;
+.chocolate form {
   position: absolute;
-  right: 100px;
-  top: 50%;
-  transform: translate(0%, 5%);
-  border: 15px solid #91121b;
-  border-radius: 5px;
-  padding: 10px 10px 25px 10px;
   font-family: helvetica;
+  right: 130px;
+  top: 250px;
+}
+
+.chocolate .bar {
+  scale: 1.25;
+  position: absolute;
+  right: 120px;
+  top: 125px;
 }
 
 .chocolate h1 {
+  padding: 5px 75px;
+  color: #92bdcb;
+}
+
+.chocolate h1 a {
+  text-decoration: none;
+}
+
+.chocolate h1 a:visited {
+  color: #92bdcb;
+}
+
+.chocolate h1:hover {
+  background-color: #ffdf00;
+  color: #100c0f;
+}
+
+.willytext {
+  color: white;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: x-large;
+  padding: 2px 75px;
+}
+
+.chocolate h3 {
   margin: 0;
   border-bottom: 5px solid black;
   font-size: 2em;
@@ -62,6 +90,7 @@ input[type="text"] {
   display: block;
   margin: 10px 0;
   border: 1px solid #d6d9dc;
+  width: 125px;
 }
 
 input[type="text"]:focus {
@@ -70,11 +99,19 @@ input[type="text"]:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+input[type="submit"] {
+  background-color: gold;
+  padding: 5px 5px;
+  cursor: pointer;
+  border: 1px solid goldenrod;
+}
+
 .ticket {
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  scale: 1.2;
+  bottom: -100px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-42%);
 }
 
 .hidden {
@@ -89,8 +126,83 @@ input[type="text"]:focus {
 
 #madlib {
   position: absolute;
-  width: 500px;
-  top: 350px;
+  width: 605px;
+  top: 440px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-47%);
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#overlay {
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+#overlay h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 75px;
+}
+
+#overlay h1 a {
+  text-decoration: none;
+  color: #FAF1AF;
+}
+
+#overlay h1 a:visited {
+  color: #FAF1AF;
+}
+
+#overlay h1:hover {
+  background-color: #2400E1;
+}
+
+#overlay h2 {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translate(-45%);
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+#overlay h3 {
+  position: absolute;
+  top: 335px;
+  left: 50%;
+  transform: translate(-45%);
+  font-family: "Goudy Bookletter 1911", serif;
+  font-style: normal;
+  letter-spacing: 15px;
+  font-size: 46px;
+  min-width: max-content;
+}
+
+.close {
+  position: absolute;
+  top: 610px;
+  left: 50%;
+  transform: translate(-45%);
+  background-color: #d6d9dc;
+  border: 2px solid #91121B;
+  padding: 5px 10px;
+  color: #100c0f;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 16px;
+}
+
+.close a {
+  text-decoration: none;
+}
+
+.close a:visited {
+  color: #100c0f;
 }
