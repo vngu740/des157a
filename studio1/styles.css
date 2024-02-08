@@ -15,7 +15,7 @@ body {
 }
 
 .chocolate .bar {
-  scale: 1.25;
+  transform: scale(1.25);
   position: absolute;
   right: 120px;
   top: 125px;
@@ -108,7 +108,7 @@ input[type="submit"] {
 
 .ticket {
   position: absolute;
-  scale: 1.2;
+  transform: scale(1.2);
   bottom: -100px;
   left: 50%;
   transform: translate(-42%);
