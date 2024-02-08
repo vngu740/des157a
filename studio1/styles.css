@@ -108,10 +108,10 @@ input[type="submit"] {
 
 .ticket {
   position: absolute;
-  transform: scale(1.2);
-  bottom: -100px;
+  bottom: -135px;
   left: 50%;
-  transform: translate(-42%);
+  transform: translate(-50%);
+  width: 1200px;
 }
 
 .hidden {
@@ -127,7 +127,7 @@ input[type="submit"] {
 #madlib {
   position: absolute;
   width: 605px;
-  top: 440px;
+  top: 425px;
   left: 50%;
   transform: translate(-47%);
   font-family: "Gowun Batang", serif;
@@ -164,7 +164,7 @@ input[type="submit"] {
 
 #overlay h2 {
   position: absolute;
-  top: 320px;
+  top: 305px;
   left: 50%;
   transform: translate(-45%);
   font-family: "Gowun Batang", serif;
@@ -176,7 +176,7 @@ input[type="submit"] {
 
 #overlay h3 {
   position: absolute;
-  top: 335px;
+  top: 320px;
   left: 50%;
   transform: translate(-45%);
   font-family: "Goudy Bookletter 1911", serif;
@@ -188,7 +188,7 @@ input[type="submit"] {
 
 .close {
   position: absolute;
-  top: 610px;
+  top: 590px;
   left: 50%;
   transform: translate(-45%);
   background-color: #d6d9dc;
