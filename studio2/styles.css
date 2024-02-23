@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    color: #333;
+  }
+  
+  main {
+    margin: 0 10vw;
+  }
+  
+  section {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+    border-right: 1px solid black;
+  }
+  
+  p {
+    line-height: 1.5em;
+  }
+  
+  article h1 {
+    font-family: "Junge", cursive;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .japanimg {
+    display: block;
+    margin: 0;
+    width: 50vw;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .japanimg img {
+    position: absolute;
+    transition: all 3s ease;
+  }
+  
+  .sect1 {
+    width: 260vh;
+    top: 6%;
+    left: 18%;
+  }
+  
+  .sectimg {
+    width: 100%;
+  }
+  
+  .sect2,
+  .sect3,
+  .sect4,
+  .sect5,
+  .sect6
+  .sect7 {
+    width: 70%;
+  }
+  
+  .sect2 {
+    width: 125vh;
+    top: 17%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sect3 {
+    width: 320vh;
+    top: -18%;
+    left: -65%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sect4 {
+    width: 375vh;
+    top: -28%;
+    left: -80%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sect5 {
+    width: 375vh;
+    top: -30%;
+    left: -35%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sect6 {
+    width: 415vh;
+    top: -45%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sect7 {
+    width: 400vh;
+    top: -42%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f6f0e4;
+    font-family: "Junge", cursive;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  
+  .header h2 {
+    margin: 1.25vw 10vw;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: white;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #b0dbed;
+    width: 0%;
+  }
+  
