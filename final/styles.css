@@ -1,0 +1,12 @@
+body {
+  margin: auto;
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  background-color: #ffe8e5;
+}
+
+h2 {
+    padding-left: 10px;
+    border-left: 5px solid #10ADD0;
+}
