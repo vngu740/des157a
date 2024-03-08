@@ -1,17 +1,190 @@
-body {
-  font-family: Arial;
-  color: #333;
-  padding: 50px;
-  line-height: 1.5em;
-  background-color: #F0B7AE;
+html {
+  cursor: url("images/hammer.png") -5 10, auto;
 }
 
-#teeth {
-  background-image: url("images/start.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  margin: auto;
+  background-color: #f0b7ae;
+  font-family: "Ojuju", sans-serif;
+  font-style: normal;
+}
+
+.eye {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #492A15;
+}
+
+.eye1 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.eye2 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+#player1 {
+  position: absolute;
+  top: 14%;
+  left: 14.35%;
+  text-align: center;
+}
+
+#player2 {
+  position: absolute;
+  top: 14%;
+  right: 14.35%;
+  text-align: center;
+}
+
+#score1 {
+  position: absolute;
+  top: 28%;
+  left: 15%;
+  text-align: center;
+}
+
+#score2 {
+  position: absolute;
+  top: 28%;
+  right: 15%;
+  text-align: center;
 }
 
 button {
   padding: 10px;
+}
+
+button:hover {
+  cursor: url("images/hammertilted.png"), auto;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #591C26;
+}
+
+#gamecontrol, #actions {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+#startgame, #roll, #rollagain {
+  background-color: #3134f6;
+  border-color: #ECE13F;
+  color: white;
+  font-weight: 600;
+}
+
+#startgame:hover, #roll:hover, #rollagain:hover {
+  background-color: #0105CC;
+}
+
+#pass {
+  background-color: #73ffb9;
+  border-color: white;
+}
+
+#pass:hover {
+  background-color: #c3ffe1;
+}
+
+#quitbutton {
+  font-size: smaller;
+  font-weight: 500;
+  background-color: rgb(251, 138, 138);
+  border-color: rgb(239, 84, 84);
+}
+
+#quitbutton:hover {
+  background-color: rgb(239, 84, 84);
+  border-color: rgb(251, 138, 138);
+}
+
+#startagain {
+  background-color: rgb(179, 255, 169);
+  border-color: rgb(38, 224, 13);
+}
+
+#startagain:hover {
+  border-color: rgb(179, 255, 169);
+  background-color: rgb(38, 224, 13);
+  color: white;
+  cursor: pointer;
+}
+
+#actions p {
+  margin-top: 0;
+}
+
+#teeth {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  width: max-content;
+  border-radius: 50px;
+}
+
+#quit {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.playerturn {
+  animation: playerturn 1.5s linear infinite;
+}
+
+.winner {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes playerturn {
+  0%, 100% {
+    top: 14%;
+  }
+
+  50% {
+    top: 13%;
+  }
+}
+
+footer {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
+
+#sources {
+  margin: 50px;
+}
+
+#sources p, button {
+  font-weight: 500;
+}
+
+#sources h2, button {
+  margin-top: 5%;
 }

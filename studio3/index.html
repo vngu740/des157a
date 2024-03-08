@@ -8,21 +8,46 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="styles.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <body id="teeth">
-      <h1>TEETH</h1>
 
-      <div id="gamecontrol">
-        <h2>Start a Game</h2>
-        <button id="startgame">
-          Randomly Pick the First Player, and Start the Game
-        </button>
-      </div>
+  <body>
+    <div class="eye eye1"></div>
+    <div id="player1"></div>
 
-      <div id="game"></div>
-      <div id="actions"></div>
-      <div id="score"></div>
+    <div class="eye eye2"></div>
+    <div id="player2"></div>
+
+    <img src="images/start.png" id="teeth" alt="teeth" />
+    <h1>TEETH</h1>
+    <div id="gamecontrol">
+      <button id="startgame">Start Game</button>
+      <p>
+        <img src="images/leftperson.png" height="35" alt="character one" />Game
+        rules will not be explained.<img
+          src="images/rightperson.png"
+          height="35"
+          alt="character two"
+        />
+      </p>
+    </div>
+    <div id="actions"></div>
+
+    <div id="score"></div>
+
+    <div id="quit"></div>
+
+    <footer>
+      <p><a href="sources.html">audio sources</a></p>
+    </footer>
   </body>
 </html>
