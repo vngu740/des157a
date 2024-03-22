@@ -100,9 +100,6 @@
 
         madlibArticle.innerHTML = myText;
 
-        // Pauses MadLib Homepage Background Music
-        bgmusic.pause();
-
         // Transition Sound Effect
         const transitionmusic = new Audio('audio/transition.mp3');
         transitionmusic.play();
