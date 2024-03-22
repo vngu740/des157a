@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadLib</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div id="nooverlay" class="showing">
+
+        <h1 class="home"><a href="../index.html">HOME</a></h1>
+
+        <img
+          src="images/chocobar.png"
+          alt="chocolate bar"
+          class="bar"
+          width="300"
+        />
+
+        <form>
+          <h3>Nutrition Facts</h3>
+          <div class="formgroup">
+            <label for="name1">Person's name</label>
+            <input type="text" id="name1" required />
+          </div>
+
+          <div class="formgroup">
+            <label for="adj1">Adjective</label>
+            <input type="text" id="adj1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="name2">Silly name</label>
+            <input type="text" id="name2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="place1">Place</label>
+            <input type="text" id="place1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="time1">Time</label>
+            <input type="text" id="time1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="time2">Time of day</label>
+            <input type="text" id="time2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="month1">Month</label>
+            <input type="text" id="month1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="adj2">Adjective</label>
+            <input type="text" id="adj2" />
+          </div>
+
+          <div class="formgroup">
+            <label for="num1">Number</label>
+            <input type="text" id="num1" />
+          </div>
+
+          <div class="formgroup">
+            <label for="adj3">Adjective</label>
+            <input type="text" id="adj3" />
+          </div>
+
+          <input type="submit" value="Reveal the Golden Ticket" />
+        </form>
+
+        <img
+          src="images/info.png"
+          alt="info icon"
+          class="infoopen"
+          width="30"
+        />
+
+        <section id="infooverlay" class="infohidden">
+          <article>
+            <h2>Willy Wonka MadLib Instuctions</h2>
+            <p>
+              MadLibs are a fun way to play and create new stories. This is a fun word game that you can play alone or with friends.
+            </p>
+
+            <p>
+                In the chocolate bar, fill out out the inputs to create your own Willy Wonka themed golden ticket madlib!
+              </p>
+            <button class="infoclose">Close</button>
+          </article>
+        </section>
+      </div>
+
+      <div id="overlay" class="hidden">
+        <img src="images/ticket.png" alt="goldenticket" class="ticket" />
+        <h1 class="home"><a href="../index.html">HOME</a></h1>
+        <h2>Wonka's</h2>
+        <h3>GOLDEN TICKET</h3>
+        <article id="madlib"></article>
+        <p class="close"><a href="index.html">Eat another Wonka Bar</a></p>
+        <div class="transition"></div>
+      </div>
+    </main>
+  </body>
+</html>
